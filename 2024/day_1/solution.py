@@ -21,5 +21,15 @@ def main(input_value):
         sim_score += similarity_map[second[i]]*second[i]
     return sim_score
 
+def main_(input_value):
+    left_list, right_list = get_first_second_list(input_value)
+    # Sort both lists
+    right_counts = Counter(right_list)
+
+    # Calculate the similarity score
+    similarity_score = sum(num * right_counts[num] for num in left_list)
+    
+    return similarity_score
+
 if __name__ == "__main__":
     print(main(input_value))
