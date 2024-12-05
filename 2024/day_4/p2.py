@@ -18,7 +18,7 @@ def valid_xmas_pattern(subgrid):
         [["M", ".", "S"], [".", "A", "."], ["M", ".", "S"]],
         [["S", ".", "M"], [".", "A", "."], ["S", ".", "M"]],
         [["S", ".", "S"], [".", "A", "."], ["M", ".", "M"]],
-        [["M", ".", "M"], [".", "A", "."], ["S", ".", "S"]],
+        [["M", ".", "M"], [".", "A", "."], ["S", ".", "S"]]
     ]
     return subgrid in valid_patterns
     # for pattern in valid_patterns:
@@ -42,4 +42,4 @@ def valid(grid, row, col):
 if __name__ == '__main__':  
     grid = [list(row) for row in input_value]
 
-    print(main(grid))  # Output the number of X-MAS occurrences
+    print(main(grid))
